@@ -1,0 +1,55 @@
+[color]
+  ui = true
+
+[alias]
+  a = add
+
+  b = branch -v
+  
+  c = commit -m
+  ca = commit -am
+  ci = commit
+  amend = commit --amend
+  
+  co = checkout
+  nb = checkout -b
+  
+  d = diff
+  last = diff HEAD^
+
+  l = log --graph --date=short
+  changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
+  short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
+  changelog = log --pretty=format:\" * %s\"
+  shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
+
+  pl = pull
+  ps = push
+
+  rc = rebase --continue
+  rs = rebase --skip
+
+  r = remote -v
+
+  unstage = reset HEAD
+  uncommit = reset --soft HEAD^
+  filelog = log -u
+
+  ss = stash
+  sl = stash list
+  sa = stash apply
+  sd = stash drop
+
+  s = status
+
+  t = tag -n
+
+  lastday = log --author=Brenno --pretty=oneline --all --since=1.day
+  lastfriday = log --author=Brenno --pretty=oneline --all --since='last Sex'
+[format]
+  pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
+[push]
+  default = tracking
+[user]
+  name = Rui Anderson
+  email = anderson.rui@gmail.com
