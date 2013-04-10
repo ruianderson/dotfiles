@@ -50,6 +50,8 @@
   pretty = format:%C(white)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(cyan)%s %C(red) [%an]%Creset
 [push]
   default = tracking
+[core]
+  editor = vim -f
 [user]
   name = Rui Anderson
   email = anderson.rui@gmail.com
