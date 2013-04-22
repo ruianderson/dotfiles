@@ -151,7 +151,9 @@ Bundle 'tpope/vim-git'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color schemes
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'flazz/vim-colorschemes'
+Bundle 'mrtazz/molokai.vim'
+Bundle 'croaky/vim-colors-github'
+Bundle 'nelstrom/vim-mac-classic-theme'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Powerline
 "
@@ -180,12 +182,6 @@ autocmd FocusLost * call Pl#UpdateStatusline(0)
 " opened file. Works for " 2 space, 4 space and tab indentation.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Bundle 'conormcd/matchindent.vim'
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Numbers.vim
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'myusuf3/numbers.vim'
-nnoremap <leader>rn :NumbersToggle<CR>
 
 filetype plugin indent on
 
