@@ -186,6 +186,12 @@ autocmd FocusLost * call Pl#UpdateStatusline(0)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Bundle 'conormcd/matchindent.vim'
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Numbers.vim
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'myusuf3/numbers.vim'
+nnoremap <leader>rn :NumbersToggle<CR>
+
 filetype plugin indent on
 
 " Backups and swap
