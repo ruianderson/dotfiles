@@ -151,10 +151,7 @@ Bundle 'tpope/vim-git'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Color schemes
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'mrtazz/molokai.vim'
-Bundle 'croaky/vim-colors-github'
-Bundle 'nelstrom/vim-mac-classic-theme'
-
+Bundle 'flazz/vim-colorschemes'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Powerline
 "
