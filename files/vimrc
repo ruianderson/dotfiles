@@ -167,14 +167,12 @@ Bundle 'nelstrom/vim-mac-classic-theme'
 " See: https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher
 " You'll probably need this too: https://github.com/jenius/Fontforge-Installer
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'Lokaltog/powerline'
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+
 
 let g:Powerline_symbols = 'fancy'
 let g:Powerline_stl_path_style = 'relative'
-call Pl#Theme#RemoveSegment('fugitive:branch')
-call Pl#Theme#RemoveSegment('fileformat')
-call Pl#Theme#RemoveSegment('fileencoding')
-call Pl#Theme#RemoveSegment('scrollpercent')
 autocmd FocusGained * call Pl#UpdateStatusline(1)
 autocmd FocusLost * call Pl#UpdateStatusline(0)
 
