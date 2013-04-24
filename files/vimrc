@@ -221,11 +221,14 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*,public/javascrip
 set wildignore+=tmp,*.orig,*.jpg,*.png,*.gif,log,solr,.sass-cache,.jhw-cache
 set wildignore+=bundler_stubs,build,error_pages,bundle,build,error_pages
 
+" Make rvm works on vim
+set shell=sh
+
 " Status bar
 set laststatus=2
 
 set t_Co=256
-color molokai
+color github 
 
 " Show (partial) command in the status line
 set showcmd
