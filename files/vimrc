@@ -90,9 +90,9 @@ vmap <leader># :call NERDComment(0, "invert")<cr>
 " below)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 Bundle 'kien/ctrlp.vim'
-
-" Don't manage working directory
-let g:ctrlp_working_path_mode = 0
+let g:ctrlp_working_path_mode=0
+let g:ctrlp_clear_cache_on_exit=0
+let g:ctrlp_cache_dir=$HOME.'/.vim/.cache/ctrlp'
 
 map <leader>jv :let g:ctrlp_default_input = 'app/views/'<cr>:CtrlP<cr>
 map <leader>jc :let g:ctrlp_default_input = 'app/controllers/'<cr>:CtrlP<cr>
