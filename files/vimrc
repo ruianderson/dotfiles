@@ -154,6 +154,8 @@ Bundle 'tpope/vim-git'
 Bundle 'mrtazz/molokai.vim'
 Bundle 'croaky/vim-colors-github'
 Bundle 'nelstrom/vim-mac-classic-theme'
+Bundle 'croaker/mustang-vim'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Powerline
 "
@@ -239,7 +241,7 @@ set shell=sh
 set laststatus=2
 
 set t_Co=256
-color github 
+colorscheme github
 
 " Show (partial) command in the status line
 set showcmd
