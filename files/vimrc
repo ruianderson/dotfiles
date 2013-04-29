@@ -241,7 +241,7 @@ set shell=sh
 set laststatus=2
 
 set t_Co=256
-colorscheme github
+colorscheme mustang 
 
 " Show (partial) command in the status line
 set showcmd
