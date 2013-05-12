@@ -160,7 +160,8 @@ Bundle 'mrtazz/molokai.vim'
 Bundle 'croaky/vim-colors-github'
 Bundle 'nelstrom/vim-mac-classic-theme'
 Bundle 'croaker/mustang-vim'
-
+Bundle 'yearofmoo/Vim-Darkmate'
+Bundle 'altercation/vim-colors-solarized'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Powerline
 "
@@ -246,7 +247,8 @@ set shell=sh
 set laststatus=2
 
 set t_Co=256
-colorscheme mustang 
+set background=dark
+colorscheme solarized
 
 " Show (partial) command in the status line
 set showcmd
