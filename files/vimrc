@@ -161,6 +161,7 @@ Bundle 'croaky/vim-colors-github'
 Bundle 'nelstrom/vim-mac-classic-theme'
 Bundle 'croaker/mustang-vim'
 Bundle 'yearofmoo/Vim-Darkmate'
+Bundle 'w0ng/vim-hybrid'
 Bundle 'altercation/vim-colors-solarized'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Powerline
