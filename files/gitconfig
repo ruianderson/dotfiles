@@ -55,7 +55,3 @@
 [user]
   name = Rui Anderson
   email = anderson.rui@gmail.com
-[diff]
-  external = meld
-[merge]
-  tool = meld
