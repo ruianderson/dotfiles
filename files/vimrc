@@ -164,23 +164,11 @@ Bundle 'yearofmoo/Vim-Darkmate'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'altercation/vim-colors-solarized'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Powerline
-"
-" The ultimate vim statusline utility
-"
-" You'll need a powerline patched font.
-" You should probably use inconsolata-g (included in fonts directory)
-"
-" If not, you can patch your own.
-" See: https://github.com/Lokaltog/vim-powerline/tree/develop/fontpatcher
-" You'll probably need this too: https://github.com/jenius/Fontforge-Installer
+" Airline
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Bundle "Lokaltog/powerline", {"rtp": "powerline/bindings/vim/"}
+Bundle 'bling/vim-airline'
 
-let g:Powerline_symbols = 'fancy'
-let g:Powerline_stl_path_style = 'relative'
-autocmd FocusGained * call Pl#UpdateStatusline(1)
-autocmd FocusLost * call Pl#UpdateStatusline(0)
+let g:airline_powerline_fonts = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " matchindent.vim
