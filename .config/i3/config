@@ -19,7 +19,7 @@ exec --no-startup-id xrandr --output eDP1 --primary
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
 
 # Screen Lock
 bindsym Control+$mod+l exec .scripts/i3lock-wrapper
@@ -43,7 +43,7 @@ client.focused          $grey       $grey       $white      #3366FF
 client.focused_inactive $grey       $grey       $lightgrey  #3366FF
 client.unfocused        $grey       $grey       $lightgrey  $grey
 client.urgent           $red        $red        $black      $red
-client.background       #101010
+client.background       #10108
 
 # Font
 font pango:Inconsolata 10
@@ -55,7 +55,7 @@ floating_modifier $mod
 bindsym $mod+Return exec i3-sensible-terminal
 
 # Start File Manager
-bindsym $mod+n exec pcmanfm
+bindsym Control+$mod+n exec pcmanfm
 
 # Kill focused window
 bindsym $mod+Shift+q kill
@@ -66,6 +66,7 @@ bindsym $mod+Tab exec rofi -show window -lines 5 -eh 3 -width 1368 -padding 300 
 
 # Assign application to specific workspaces
 assign [class="Firefox"] 1:www
+assign [class="weechat"] 4:chat
 assign [class="pcmanfm"] → 3
 
 # Key Binding
@@ -122,13 +123,14 @@ bindsym $mod+a focus parent
 
 exec --no-startup-id i3-msg rename workspace 1 to "1:www"
 exec --no-startup-id i3-msg rename workspace 2 to "2:term"
+exec --no-startup-id i3-msg rename workspace 2 to "4:chat"
 exec --no-startup-id i3-msg rename workspace 2 to "10:sys"
 
 # switch to workspace
 bindsym $mod+1 workspace 1:www
 bindsym $mod+2 workspace 2:term
 bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
+bindsym $mod+4 workspace 4:chat
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
@@ -140,7 +142,7 @@ bindsym $mod+0 workspace 10:sys
 bindsym $mod+Shift+1 move container to workspace 1:www
 bindsym $mod+Shift+2 move container to workspace 2:term
 bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+4 move container to workspace 4:chat
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
