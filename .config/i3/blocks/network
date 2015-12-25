@@ -1,0 +1,21 @@
+#!/bin/bash
+
+device="${BLOCK_INSTANCE:-wlan0}"
+status=$(cat /sys/class/net/${device}/operstate)
+ip=$(ip route | grep $device | grep link | awk '{print $9;exit}')
+
+if [[ "${status}" == "up" ]]; then
+    if [[ "${ip}" != "" ]]; then
+        echo ""
+        echo ""
+        echo "#00FF00"
+    else
+        echo ""
+        echo ""
+        echo "#FF0000"
+    fi
+else
+    echo " Disconnected"
+    echo " Disconnected"
+    echo "#FF0000"
+fi
