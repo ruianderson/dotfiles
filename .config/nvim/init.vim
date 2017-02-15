@@ -25,6 +25,11 @@ Plug 'szw/vim-tags'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sleuth'
+Plug 'kchmck/vim-coffee-script'
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-notes'
+Plug 'nathangrigg/vim-beancount'
+Plug 'vim-scripts/DrawIt'
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 map <leader>n :NERDTreeToggle<CR>
